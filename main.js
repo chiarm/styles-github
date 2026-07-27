@@ -20,14 +20,14 @@ if (cursor && cursorBlur) {
             const isLight = localStorage.getItem('theme') === 'light';
             cursor.style.width = '20px';
             cursor.style.height = '20px';
-            cursor.style.backgroundColor = isLight ? '#0e850b' : '#6ff066';
+            cursor.style.backgroundColor = isLight ? '#0d52a0' : '#79c0ff';
         });
 
         el.addEventListener('mouseleave', () => {
             const isLight = localStorage.getItem('theme') === 'light';
             cursor.style.width = '10px';
             cursor.style.height = '10px';
-            cursor.style.backgroundColor = isLight ? '#084d06' : '#40e437';
+            cursor.style.backgroundColor = isLight ? '#0a417f' : '#58a6ff';
         });
     });
 }
@@ -76,9 +76,9 @@ function copyEmail(button) {
             button.innerText = "¡Email Copiado!";
         }
         
-        button.style.borderColor = "#40e437";
+        button.style.borderColor = "#58a6ff";
         button.style.color = "#000000";             // <- Texto en negro
-        button.style.backgroundColor = "#40e437";
+        button.style.backgroundColor = "#58a6ff";
 
         setTimeout(() => {
             if (copyTextElement) {
